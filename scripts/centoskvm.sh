@@ -61,7 +61,7 @@ fi
 IMGNAME=$1
 
 # default kickstart file
-KICKSTART="centos6x-vm-gpt-selinux.cfg"
+KICKSTART="centos7x-vm-gpt-selinux.cfg"
 
 # VM image file extension
 EXT="qcow2"
@@ -76,8 +76,8 @@ virt-install \
 --vcpus 1 \
 --nographics \
 --os-type=linux \
---os-variant=rhel6 \
---location=http://mirror.catn.com/pub/centos/6/os/x86_64 \
+--os-variant=rhel7 \
+--location=http://mirror.catn.com/pub/centos/7.1.1503/os/x86_64 \
 --initrd-inject=../kickstarts/$KICKSTART \
 --extra-args="ks=file:/$KICKSTART text console=tty0 utf8 console=ttyS0,115200" \
 --disk path=/var/lib/libvirt/images/$IMGNAME.$EXT,size=10,bus=virtio,format=qcow2 \

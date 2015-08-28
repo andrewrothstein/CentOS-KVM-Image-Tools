@@ -61,7 +61,7 @@ fi
 IMGNAME=$1
 
 # default kickstart file
-KICKSTART="CentOS-6.4-x86_64-cloud.cfg"
+KICKSTART="CentOS-7.1.153-x86_64-cloud.cfg"
 
 # VM image file extension
 EXT="qcow2"
