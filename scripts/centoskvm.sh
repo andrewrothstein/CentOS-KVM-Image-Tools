@@ -47,14 +47,13 @@
 
 # ensure script is being run as root
 if [ `whoami` != root ]; then
-   echo "ERROR: This script must be run as root" 1>&2
-   exit 1
+   echo "Ensure access to kvm images in /var/lib/libvirt/images"
 fi
 
 # check for image name
 if [ -z "$1" ]; then
-	echo "ERROR: No argument supplied. Please provide the image name."
-	exit 1
+    echo "ERROR: No argument supplied. Please provide the image name."
+    exit 1
 fi
 
 # name of the image
