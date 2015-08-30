@@ -71,7 +71,7 @@ echo "Generating VM ..."
 # create image file
 virt-install \
 --name $IMGNAME \
---ram 512 \
+--ram 1024 \
 --cpu host \
 --vcpus 1 \
 --nographics \
