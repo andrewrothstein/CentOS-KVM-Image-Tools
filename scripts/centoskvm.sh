@@ -77,7 +77,7 @@ virt-install \
 --nographics \
 --os-type=linux \
 --os-variant=rhel7 \
---location=http://mirror.catn.com/pub/centos/7.1.1503/os/x86_64 \
+--location=http://mirror.cc.columbia.edu/pub/linux/centos/7.1.1503/os/x86_64 \
 --initrd-inject=../kickstarts/$KICKSTART \
 --extra-args="ks=file:/$KICKSTART text console=tty0 utf8 console=ttyS0,115200" \
 --disk path=/var/lib/libvirt/images/$IMGNAME.$EXT,size=10,bus=virtio,format=qcow2 \
